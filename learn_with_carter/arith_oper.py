@@ -17,3 +17,18 @@ print 4**0.5
 
 # 取余
 print 5%2
+
+# 科学计数法 e or E
+a = 2.6e75
+b = 1.2E74
+print a+b
+
+# homework 1
+print 35.27*(1+0.15)/3
+
+# homework 2
+F = int(raw_input())
+print 5.0/9*(F-32)
+
+# homework 3
+print 200.0/80
