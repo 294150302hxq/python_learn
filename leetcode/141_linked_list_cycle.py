@@ -31,3 +31,17 @@ class Solution(object):
             if pointer1 == pointer2:
                 return True
         return False
+
+    def hasCycle2(self, head):
+        """
+        :type head: ListNode
+        :rtype: bool
+        """
+        if not head: return False
+        pointer_set = set()
+        while head is not None:
+            pointer_set.add(head)
+            head = head.next
+            if head in pointer_set:
+                return True
+        return False
