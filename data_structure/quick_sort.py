@@ -24,6 +24,7 @@ def quick_sort(num_list, i, j):
     quick_sort(num_list, i, right - 1)
     quick_sort(num_list, right + 1, j)
 
+
 def quick_sort1(num_list):
     if len(num_list) < 2:
         return num_list
