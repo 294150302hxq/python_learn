@@ -19,7 +19,7 @@ class Solution(object):
             if nums[i] > 0:
                 break
             # 跳过重复
-            if i>0 and nums[i] == nums[i-1]:continue
+            if i > 0 and nums[i] == nums[i-1]: continue
             l, r = i+1, length-1
             while l < r:
                 total = nums[i] + nums[l] + nums[r]
@@ -28,7 +28,7 @@ class Solution(object):
                 elif total < 0:
                     l += 1
                 else:
-                    rs.append([nums[i],nums[l],nums[r]])
+                    rs.append([nums[i], nums[l], nums[r]])
                     # 跳过重复
                     while l < r and nums[l] == nums[l+1]:
                         l += 1

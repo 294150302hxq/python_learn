@@ -25,9 +25,10 @@ class Solution(object):
             i += 1
         rs = 0
         length = len(int_str)
-        while i< length:
-            rs += int(int_str[i])*10**(length-i-1)
-            i += 1
+        rs = int(int_str[i:])
+        # while i< length:
+        #     rs += int(int_str[i])*10**(length-i-1)
+        #     i += 1
         if sign*rs >max_int or sign*rs<min_int:
             return 0
         return sign*rs

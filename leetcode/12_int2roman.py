@@ -21,12 +21,7 @@ class Solution(object):
         for i in fen_mu:
             n = num / i
             num = num % i
-            if n == 0:
-                continue
-            elif n == 1:
-                rs += num_dict[i]
-            else:
-                rs += num_dict[i]*n
+            rs += num_dict[i]*n
         if num != 0:
             rs += num_dict[num]
         return rs

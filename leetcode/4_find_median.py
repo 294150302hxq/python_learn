@@ -15,8 +15,6 @@ class Solution(object):
         """
         l1 = len(nums1)
         l2 = len(nums2)
-        left = 0
-        right = 0
         left = ((l1+l2)/2 if (l1+l2)%2 == 0 else int((l1+l2)/2+1))
         right = int((l1+l2)/2+1)
         i = 0

@@ -15,10 +15,10 @@ class Solution(object):
         """
         if not strs: return ''
         rs = strs[0]
-        for i in range(1,len(strs)):
-            max_len = min(len(rs),len(strs[i]))
-            if max_len == 0 and len(rs)==0:
-                return rs
+        for i in range(1, len(strs)):
+            max_len = min(len(rs), len(strs[i]))
+            if max_len == 0:
+                return ""
             tmp = ''
             for j in range(max_len):
                 if rs[j] == strs[i][j]:
